@@ -1,0 +1,27 @@
+{
+  "name": "lab-ts-kitchen-sink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.42.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plebtech/ib-lab-ts-kitchen-sink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plebtech/ib-lab-ts-kitchen-sink/issues"
+  },
+  "homepage": "https://github.com/plebtech/ib-lab-ts-kitchen-sink#readme"
+}
