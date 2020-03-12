@@ -1,11 +1,8 @@
 "use strict";
-var name = 'Nick';
-// number of US states.
+var myName = 'Nick';
 var NUMBER_OF_STATES = 50;
-// 5 plus 4.
 var FIVE_PLUS_FOUR = add(5, 4);
 var veggies = ['artichokes', 'cabbage', 'spinach', 'broccoli', 'parsnips'];
-// array of objects.
 var namesToCheck = [
     {
         name: 'Isabel',
@@ -32,40 +29,15 @@ var namesToCheck = [
         age: 29
     }
 ];
-/*  CALLS
-    ---------- */
-sayHello();
-checkAge('Charles', 21);
-checkAge('Abby', 27);
-checkAge('James', 18);
-checkAge('John', 17);
-// while loop to step through all veggies.
-i = 0;
-while (i < veggies.length) {
-    console.log(veggies[i]);
-    i++;
-}
-// for in loop to check the age (call to checkAge function) of every person in an array (array of objects).
-for (var i in namesToCheck) {
-    checkAge(namesToCheck[i].name, namesToCheck[i].age);
-}
-// checking length of 'Hello World!'
-var lengthHW = getLength("Hello World!");
-if (lengthHW % 2 === 0) {
-    console.log('The world is nice and even!');
-}
-else {
-    console.log('The world is an odd place!');
-}
-/*  FUNCTIONS
-    ---------- */
 // function to take two numbers and return their sum.
 function add(num1, num2) {
     return num1 + num2;
 }
 // function to say 'Hello World!'
 function sayHello() {
-    console.log('Hello World!');
+    var greet = 'Hello World!';
+    console.log(greet);
+    // alert(greet);
 }
 // takes a name and an age and check if that person is under 21.
 function checkAge(name, age) {
@@ -80,3 +52,33 @@ function checkAge(name, age) {
 function getLength(string) {
     return string.length;
 }
+// while loop to step through all veggies.
+var i = 0;
+function printVeggies(vegs) {
+    while (i < vegs.length) {
+        console.log(vegs[i]);
+        i++;
+    }
+}
+// function calls.
+sayHello();
+checkAge('Charles', 21);
+checkAge('Abby', 27);
+checkAge('James', 18);
+checkAge('John', 17);
+printVeggies(veggies);
+// for in loop to check the age (call to checkAge function) of every person in an array (array of interfaces).
+for (var n in namesToCheck) {
+    checkAge(namesToCheck[n].name, namesToCheck[n].age);
+}
+// checking length of 'Hello World!' via getLength().
+var lengthHW = getLength("Hello World!");
+function checkLengthHW(lengthHW) {
+    if (lengthHW % 2 === 0) {
+        console.log('The world is nice and even!');
+    }
+    else {
+        console.log('The world is an odd place!');
+    }
+}
+checkLengthHW(lengthHW);
